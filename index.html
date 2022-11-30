@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+
+  <body>
+        <div class="container">
+            <!-- Bai tap 1 -->
+            <div class="baitap1 py-5">
+                <h2 class="pb-3">BÀI TẬP 1: Sắp xếp số nguyên theo thứ tự tăng dần</h2>
+                <!-- sơ đồ ba khối -->
+                <div class="row f_center">
+                    <div class="col col-3 input mx-4">
+                        <p>INPUT:</p>
+                        <p>ba số bất kì</p>
+                    </div>
+
+                    <div class="col col-4 handle mx-4">
+                        <p>Bước 1: kiểm tra 3 số có phải là số nguyên hay không</p>
+                        <p>(dùng hàm Number.isinteger)</p>
+                        <p>Bước 2: xét logic để tìm ra thứ tự của ba số</p>
+                        <p>(có 6 trường hợp có thể xảy ra)</p>
+                    </div>
+
+                    <div class="col col-3 output mx-4">
+                        <p>OUTPUT:</p>
+                        <p>- Nếu có 1 số không phải là số nguyên thì hiện thông báo</p>
+                        <p>- Nếu cả 3 số đều là số nguyên thì xét thứ tự 3 số rồi xuất thứ tự ra màn hình</p>
+                    </div>
+                </div>
+                <!-- thực hành code -->
+                <div class="py-4">
+                    
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="so1" placeholder="Nhập vào số thứ nhất">
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="so2" placeholder="Nhập vào số thứ hai">
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="so3" placeholder="Nhập vào số thứ ba">
+                        </div>
+                        <button onclick="sapXepSo()" class="btn btn-success my-2">
+                            Nhập
+                        </button>
+                        <br>
+                        <p id="showArea" class="d-inline-block font-weight-bold"></p>
+                </div>
+            </div>
+
+
+            <!-- bài tập 2 -->
+            <div class="baitap2 mb-5 pb-5">
+                <h2 class="pb-3">BÀI TẬP 2: Chương trình chào hỏi các thành viên trong gia đình</h2>
+                <!-- sơ đồ ba khối -->
+                <div class="row f_center">
+                    <div class="col col-3 input mx-4">
+                        <p>INPUT:</p>
+                        <p>cho người dùng chọn câu trả lời trong menu list</p>
+                    </div>
+
+                    <div class="col col-3 handle mx-4">
+                        <p>HANDLE:</p>
+                        <p>Bước 1: xem xét lựa chọn của người dùng để đưa ra câu chào phù hợp</p>
+                    </div>
+
+                    <div class="col col-4 output mx-4">
+                        <p>OUTPUT:</p>
+                        <p>- Nếu là mẹ thì xuất ra "xin chào mẹ"</p>
+                        <p>- Nếu là bố thì xuất ra "xin chào bố"</p>
+                        <p>- Nếu là anh trai thì xuất ra "xin chào anh trai"</p>
+                        <p>- Nếu là em gái thì xuất ra "xin chào em gái"</p>
+                    </div>
+                </div>
+                <!-- thực hành code -->
+                <p>Ai đang sử dụng máy?</p>
+                <div class="form-group">
+                    <select class="form-control" id="select" onclick="chaoHoi()">
+                        <option>---Vui lòng chọn---</option>
+                        <option value="B">Bố</option>
+                        <option value="M">Mẹ</option>
+                        <option value="A">Anh trai</option>
+                        <option value="E">Em gái</option>
+                    </select>
+                </div>
+                <div id="showArea2" class="font-weight-bold"></div>
+            </div>
+
+
+            <!-- Bai tap 3 -->
+            <div class="baitap3 pb-5">
+                <h2 class="pb-3">BÀI TẬP 3: Đếm số chẵn, số lẻ</h2>
+                <!-- sơ đồ ba khối -->
+                <div class="row f_center">
+                    <div class="col col-3 input mx-4">
+                        <p>INPUT:</p>
+                        <p>ba số bất kì</p>
+                    </div>
+
+                    <div class="col col-4 handle mx-4">
+                        <p>Bước 1: kiểm tra 3 số có phải là số nguyên hay không</p>
+                        <p>(dùng hàm Number.isinteger)</p>
+                        <p>Bước 2: chia lấy dư lần lượt từng số cho 2 để kiểm tra số có phải số chẵn hay không</p>
+                        <p>nếu là số chẵn thì cho biến a tăng 1</p>
+                    </div>
+
+                    <div class="col col-3 output mx-4">
+                        <p>OUTPUT:</p>
+                        <p>Xuất số chẵn số lẻ ra màn hình</p>
+                    </div>
+                </div>
+                <!-- thực hành code -->
+                <div class="py-4">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="so4" placeholder="Nhập vào số thứ nhất">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="so5" placeholder="Nhập vào số thứ hai">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="so6" placeholder="Nhập vào số thứ ba">
+                    </div>
+                    <button onclick="demSoChanLe()" class="btn btn-success my-2">
+                        Nhập
+                    </button>
+                    <br>
+                    <p id="showArea3" class="d-inline-block font-weight-bold"></p>
+                </div>
+            </div>
+
+
+            <!-- Bai tap 4 -->
+            <div class="baitap4 pb-5 mb-5">
+                <h2 class="pb-3">BÀI TẬP 4: Tìm loại hình tam giác</h2>
+                <!-- sơ đồ ba khối -->
+                <div class="row f_center">
+                    <div class="col col-3 input mx-4">
+                        <p>INPUT:</p>
+                        <p>nhập chiều dài ba cạnh của tam giác</p>
+                    </div>
+
+                    <div class="col col-4 handle mx-4">
+                        <p>HANDLE:</p>
+                        <p>Xét theo công thức để tìm loại hình tam giác</p>
+                        <p>- Tam giác vuông (định lý pytago)</p>
+                        <p>- Tam giác đều (a = b và a = c)</p>
+                        <p>- Tam giác cân (a = b hoặc a = c hoặc b = c)</p>
+                        <p>- Còn lại là tam giác thường</p>
+                    </div>
+
+                    <div class="col col-3 output mx-4">
+                        <p>OUTPUT:</p>
+                        <p>Xuát ra màn hình "Đây là tam giác vuông/cân/đều/thường</p>
+                    </div>
+                </div>
+                <!-- thực hành code -->
+                <div class="py-4">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="so7" placeholder="Nhập vào cạnh thứ nhất">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="so8" placeholder="Nhập vào cạnh thứ hai">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="so9" placeholder="Nhập vào cạnh thứ ba">
+                    </div>
+                    <button onclick="xetTamGiac()" class="btn btn-success my-2">
+                        Nhập
+                    </button>
+                    <br>
+                    <p id="showArea4" class="d-inline-block font-weight-bold"></p>
+                </div>
+            </div>
+            
+        </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

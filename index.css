@@ -1,0 +1,20 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.f_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input,
+.output{
+    border: 1px solid blue;
+}
+
+.handle{
+    border: 1px solid red;
+}
